@@ -1,9 +1,11 @@
-const Vehicle= {
-    brand : "Tesla",
-    year : "2020",
-    color : "Red"
+const Vehicle = {
+    brand: "Tesla",
+    year: "2020",
+    color: "Red"
 }
 Myvehicle(Vehicle);
-export default function Myvehicle(brand, color){
-    return (<div> `My ${brand} is ${color}`</div>)
+function Myvehicle(brand, color) {
+    const message = `My ${Vehicle.brand} is ${Vehicle.color}`
+    return (<div> {message} </div>)
 }
+export default Myvehicle;
