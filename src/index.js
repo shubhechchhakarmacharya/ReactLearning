@@ -5,6 +5,10 @@ import Header from './header';
 import Banner from './Banner';
 import Gallery from './Gallery';
 import reportWebVitals from './reportWebVitals';
+import Conditional from './Conditional';
+import Use from './Use';
+import Timer from './Effect';
+import Myvehicle from './Des';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +16,10 @@ root.render(
    <Header/> 
    <Banner/>
    <Gallery/>
+   <Conditional/>
+   <Use/>
+   <Timer/>
+   <Myvehicle/>
   </React.StrictMode>
 );
 
