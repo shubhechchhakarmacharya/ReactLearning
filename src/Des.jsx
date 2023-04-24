@@ -4,7 +4,7 @@ const Vehicle = {
     color: "Red"
 }
 Myvehicle(Vehicle);
-function Myvehicle(brand, color) {
+function Myvehicle({brand, color}) {
     const message = `My ${Vehicle.brand} is ${Vehicle.color}`
     return (<div> {message} </div>)
 }
