@@ -60,3 +60,7 @@ body{
 .gallery img:hover{
   box-shadow: 0px -2px 18px 0px #87a6c7;
 }
+
+input{
+  color: black;
+}

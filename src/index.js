@@ -10,8 +10,6 @@ import Use from './Use';
 import Timer from './Effect';
 import Myvehicle from './Des';
 import List from './List';
-import Show from './Show';
-import From from './Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,8 +22,6 @@ root.render(
    <Timer/>
    <Myvehicle/>
    <List/>
-   <Show list={[]}/>
-   <From/>
 
   </React.StrictMode>
 );

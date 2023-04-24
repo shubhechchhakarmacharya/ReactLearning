@@ -11,7 +11,7 @@ function Timer() {
   return (
     <>
       <p>Count: {count}</p>
-      <button onClick={() => setCount((c) => c * 2)}>+</button>
+      <button onClick={() => setCount((c) => c * 2)} className="rounded-md border-dashed border-2 border-indigo-200 border-y-indigo-500 mt-4 pt-1 pb-1 px-4">+</button>
       <p>Multiplies By 2: {calculation}</p>
     </>
   );
