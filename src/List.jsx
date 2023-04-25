@@ -1,9 +1,11 @@
-import React, { useState } from "react";
-// const [list , setList] = useState([])
+import React  from "react";
+import Show from "./Show";
+
 class Form extends React.Component {
   state = {
     name: "",
-    post: ""
+    post: "",
+    form: []
   };
 
   add = (e) => {
@@ -12,7 +14,8 @@ class Form extends React.Component {
       alert("Don't leave them blank");
       return;
     }
-    console.log(this.state);
+    const newForm = [...this.state.form, { name: this.state.name, post: this.state.post }];
+    this.setState({ form: newForm, name: "", post: "" });
   };
 
   render() {
@@ -22,7 +25,7 @@ class Form extends React.Component {
           <label>Name</label> <br />
           <input
             className="text-lime-500 focus:outline-none focus:ring focus:ring-lime-300 rounded max-w- px-1"
-            placeholder="Enter your name" 
+            placeholder="Enter your name"
             value={this.state.name}
             onChange={(e) => {
               this.setState({ name: e.target.value });
@@ -43,6 +46,7 @@ class Form extends React.Component {
             Submit
           </button>
         </form>
+        <Show form={this.state.form} />
       </div>
     );
   }
